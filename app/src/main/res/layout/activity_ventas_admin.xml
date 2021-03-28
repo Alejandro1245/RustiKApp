@@ -71,7 +71,7 @@
                 android:id="@+id/textFiltros2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="@string/LabelFiltrosVentasFecha1"
                 android:textColor="@color/blancorusti"
                 android:textSize="14sp"
@@ -85,7 +85,8 @@
                 android:id="@+id/editTextDate"
                 android:layout_width="148dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="20dp"
                 android:background="@color/blancorusti"
                 android:ems="10"
                 android:inputType="date"
@@ -93,7 +94,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/BuscarInvenGra"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textFiltros2"
-                app:layout_constraintVertical_bias="0.121" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textFiltros3"
@@ -114,7 +115,7 @@
                 android:layout_width="148dp"
                 android:layout_height="36dp"
                 android:layout_marginStart="28dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="20dp"
                 android:background="@color/blancorusti"
                 android:ems="10"
                 android:inputType="date"
@@ -383,13 +384,12 @@
                 android:id="@+id/textCostoVenta2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
                 android:text="@string/LabelCostoVenta2"
                 android:textColor="@color/blancorusti"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven02"
                 app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven02"
-                app:layout_constraintHorizontal_bias="0.263"
+                app:layout_constraintHorizontal_bias="0.61"
                 app:layout_constraintStart_toEndOf="@+id/textDesVenta2"
                 app:layout_constraintTop_toBottomOf="@+id/textVenta2"
                 app:layout_constraintVertical_bias="0.0" />
@@ -439,7 +439,7 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven03"
                 app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven03"
-                app:layout_constraintHorizontal_bias="0.641"
+                app:layout_constraintHorizontal_bias="0.61"
                 app:layout_constraintStart_toEndOf="@+id/textDesVenta3"
                 app:layout_constraintTop_toBottomOf="@+id/textVenta3"
                 app:layout_constraintVertical_bias="0.0" />
