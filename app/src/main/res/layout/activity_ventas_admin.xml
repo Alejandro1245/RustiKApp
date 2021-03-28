@@ -126,7 +126,7 @@
                 android:id="@+id/LabelBuscarInsumoField"
                 android:layout_width="315dp"
                 android:layout_height="34dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="52dp"
                 android:background="@drawable/searchfield"
                 android:ems="10"
                 android:hint="@string/LabelBuscarInsumo"
@@ -138,35 +138,35 @@
                 android:textColor="@color/negroRusti"
                 android:textColorHint="@color/EditTextColor"
                 android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.115"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/BuscarInvenGra" />
+                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/BuscarInvenGra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="92dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginEnd="240dp"
                 android:text="@string/LabelVentasBuscar"
                 android:textColor="@color/blancorusti"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/LabelBuscarInsumoField"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.785"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textFiltros" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageButton
                 android:id="@+id/BuscarInventarioBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="8dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/LabelBuscarBtn"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.279"
+                app:layout_constraintHorizontal_bias="0.27"
                 app:layout_constraintStart_toEndOf="@+id/LabelBuscarInsumoField"
                 app:layout_constraintTop_toBottomOf="@+id/BuscarInvenGra"
                 app:srcCompat="@drawable/ic_icon_awesome_search" />
@@ -188,14 +188,14 @@
                 android:id="@+id/imageView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginBottom="32dp"
                 android:background="@color/blancorusti"
                 android:contentDescription="@string/altLineaVentas"
                 android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/MasOpcionesGraficasBtn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LabelBuscarInsumoField"
                 app:srcCompat="@drawable/l_nea_112" />
 
             <ImageButton
@@ -203,25 +203,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="72dp"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/LabelOpcionesVentasBtn"
-                app:layout_constraintEnd_toStartOf="@+id/MasOpcionesGraficasBtn"
-                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven01"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.471"
                 app:srcCompat="@drawable/ic_opciones" />
 
             <ImageButton
                 android:id="@+id/MasOpcionesGraficasBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="52dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="32dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/LabelMasOpcionesBtn"
+                app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven01"
                 app:layout_constraintEnd_toStartOf="@+id/compartirBtn"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toEndOf="@+id/opcionesVentasBtn"
                 app:srcCompat="@drawable/ic_grupo_102" />
 
             <ImageButton
@@ -229,7 +232,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="23dp"
-                android:layout_marginEnd="80dp"
+                android:layout_marginEnd="72dp"
                 android:background="@android:color/transparent"
                 android:contentDescription="@string/LabelCompartirBtn"
                 app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven01"
@@ -242,51 +245,49 @@
                 android:id="@+id/FondoDatosInven01"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/altFondoDatosInventario"
                 android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven02"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/MasOpcionesGraficasBtn"
                 app:srcCompat="@drawable/ic_trazado_66" />
 
             <ImageView
                 android:id="@+id/FondoDatosInven02"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/altFondoDatosInventario"
                 android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven03"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.107"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven01"
                 app:srcCompat="@drawable/ic_trazado_66" />
 
             <ImageView
                 android:id="@+id/FondoDatosInven03"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/altFondoDatosInventario"
                 android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/FondoDatosInven04"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven02"
                 app:srcCompat="@drawable/ic_trazado_66" />
 
             <ImageView
                 android:id="@+id/FondoDatosInven04"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:contentDescription="@string/altFondoDatosInventario"
                 android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven03"
                 app:srcCompat="@drawable/ic_trazado_66" />
 
             <ImageView
