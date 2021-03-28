@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresoAdmin">
+
+    <ImageView
+        android:id="@+id/FondoAdmin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoAdmin"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Superior"
+        app:srcCompat="@drawable/identificaci_n_admin__2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/altFondoLogoScreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/IntroRegistro"
+            android:layout_width="347dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/altFondoLoginScreen"
+            android:includeFontPadding="false"
+            android:text="@string/LabelUserFiel"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ImgHuella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/altHuellaPic"
+            app:srcCompat="@drawable/fingerprint" />
+
+        <Button
+            android:id="@+id/ClientesBtn"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:padding="0dp"
+            android:text="@string/LabelReconocimientoDactilarBtn"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgFacial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="14dp"
+            android:contentDescription="@string/altFacialPic"
+            app:srcCompat="@drawable/reconocimiento" />
+
+        <Button
+            android:id="@+id/VentasBtn"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:padding="0dp"
+            android:text="@string/LabelReconocimientoFacialBtn"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientesAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Superior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/altFondoClientesAdmin"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/almacen___clientes___registro__1" />
+
+            <ImageView
+                android:id="@+id/Logo03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/altLogo01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+            <TextView
+                android:id="@+id/LabelClientesAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/LabelClientes"
+                android:textColor="@color/blancorusti"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Logo03" />
+
+            <ImageView
+                android:id="@+id/ImgPizzita"
+                android:layout_width="118dp"
+                android:layout_height="120dp"
+                android:contentDescription="@string/altImgPizza"
+                android:rotation="70"
+                app:layout_constraintBottom_toTopOf="@+id/BuscarInventarioBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.382"
+                app:layout_constraintStart_toEndOf="@+id/LabelClientesAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/Logo03"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/pizza_2" />
+
+            <TextView
+                android:id="@+id/BuscarInvenGra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="240dp"
+                android:text="@string/LabelBuscarCliente"
+                android:textColor="@color/blancorusti"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin" />
+
+            <EditText
+                android:id="@+id/LabelBuscarInsumoField"
+                android:layout_width="280dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/searchfield"
+                android:ems="10"
+                android:hint="@string/LabelIngreseNitoNombreField"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/negroRusti"
+                android:textColorHint="@color/EditTextColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BuscarInvenGra" />
+
+            <ImageButton
+                android:id="@+id/BuscarInventarioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelBuscarBtn"
+                app:layout_constraintBottom_toTopOf="@+id/quitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toEndOf="@+id/LabelBuscarInsumoField"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin"
+                app:layout_constraintVertical_bias="0.166"
+                app:srcCompat="@drawable/ic_icon_awesome_search" />
+
+            <ImageButton
+                android:id="@+id/GraficaVentasBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelGraficasBtn"
+                app:layout_constraintBottom_toTopOf="@+id/quitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.833"
+                app:layout_constraintStart_toEndOf="@+id/BuscarInventarioBtn"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin"
+                app:layout_constraintVertical_bias="0.325"
+                app:srcCompat="@drawable/ic_gr_ficas" />
+
+            <ImageButton
+                android:id="@+id/FiltrosClienteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelFiltrosInventario"
+                app:layout_constraintBottom_toTopOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LabelBuscarInsumoField"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_icon_metro_filter" />
+
+            <TextView
+                android:id="@+id/TextFiltros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/LabelFiltrosInventario"
+                android:textColor="@color/blancorusti"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toEndOf="@+id/FiltrosClienteBtn"
+                app:layout_constraintTop_toBottomOf="@+id/LabelBuscarInsumoField" />
+
+            <ImageButton
+                android:id="@+id/QuitarFiltroBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelQuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextFiltros"
+                app:srcCompat="@drawable/ic_light____chips_1__input_b__text_only" />
+
+            <TextView
+                android:id="@+id/TextQuitarFiltro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="27dp"
+                android:text="@string/LabelQuitarFiltroC"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintBottom_toBottomOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintHorizontal_bias="0.7"
+                app:layout_constraintStart_toStartOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintTop_toTopOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintVertical_bias="0.538" />
+
+            <ImageButton
+                android:id="@+id/quitarFiltroBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelQuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintTop_toBottomOf="@+id/TextFiltros"
+                app:srcCompat="@drawable/ic_light____chips_1__input_b__text_only" />
+
+            <TextView
+                android:id="@+id/textQuitarFiltro2"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginEnd="27dp"
+                android:contentDescription="@string/LabelQuitarFiltro2"
+                android:text="@string/LabelQuitarFiltroC2"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintBottom_toBottomOf="@+id/quitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="@+id/quitarFiltroBtn"
+                app:layout_constraintStart_toStartOf="@+id/quitarFiltroBtn"
+                app:layout_constraintTop_toTopOf="@+id/quitarFiltroBtn" />
+
+            <TextView
+                android:id="@+id/textNombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/LabelCliente1"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.063"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/QuitarFiltroBtn" />
+
+            <TextView
+                android:id="@+id/textdescriptivo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/LabelDescripCliente"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.196"
+                app:layout_constraintStart_toEndOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="121dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/altFotoCliente"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/QuitarFiltroBtn"
+                app:srcCompat="@drawable/light___card_elements__image_a_image" />
+
+            <ImageButton
+                android:id="@+id/opcionesCLBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelOpcionesClientBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toEndOf="@+id/textdescriptivo"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario"
+                app:srcCompat="@drawable/ic___leading_icon_l_use_high_emphasis" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="121dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/altFotoCliente"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+                app:srcCompat="@drawable/light___card_elements__image_a_image" />
+
+            <TextView
+                android:id="@+id/textNombreUsuario2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="176dp"
+                android:text="@string/LabelCliente2"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.937"
+                app:layout_constraintStart_toEndOf="@+id/imageButton5"
+                app:layout_constraintTop_toBottomOf="@+id/textdescriptivo" />
+
+            <TextView
+                android:id="@+id/textdescriptivo2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/LabelDescripCliente"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.196"
+                app:layout_constraintStart_toEndOf="@+id/imageButton5"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario2" />
+
+            <ImageButton
+                android:id="@+id/opcionesCLBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelOpcionesClientBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toEndOf="@+id/textdescriptivo2"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario2"
+                app:srcCompat="@drawable/ic___leading_icon_l_use_high_emphasis" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/altFotoCliente"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton5"
+                app:srcCompat="@drawable/light___card_elements__image_a_image" />
+
+            <TextView
+                android:id="@+id/textNombreUsuario3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/LabelCliente3"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.063"
+                app:layout_constraintStart_toEndOf="@+id/imageButton6"
+                app:layout_constraintTop_toBottomOf="@+id/textdescriptivo2" />
+
+            <TextView
+                android:id="@+id/textdescriptivo3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="36dp"
+                android:text="@string/LabelDescripCliente"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageButton6"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario3" />
+
+            <ImageButton
+                android:id="@+id/opcionesCLBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelOpcionesClientBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toEndOf="@+id/textdescriptivo3"
+                app:layout_constraintTop_toBottomOf="@+id/textNombreUsuario3"
+                app:srcCompat="@drawable/ic___leading_icon_l_use_high_emphasis" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/altFotoCliente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+                app:srcCompat="@drawable/light___card_elements__image_a_image" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

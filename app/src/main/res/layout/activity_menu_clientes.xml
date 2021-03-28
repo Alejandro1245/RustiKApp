@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negroRusti"
+    tools:context=".MenuClientes">
+
+    <ImageView
+        android:id="@+id/FondoMenuC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoMenuClientes"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/componente_68__1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/LabelMenuC"
+            android:layout_width="185dp"
+            android:layout_height="93dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/LabelMenuClientes"
+            android:textColor="@color/mostazaRusti"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/salirMenuCBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/LabelSalirBtn"
+            android:textColor="@color/blancorusti"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/Cupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/IntroRegistro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/LabelMenuField"
+                android:text="@string/LabelMenuField"
+                android:textAlignment="center"
+                android:textColor="@color/blancorusti"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ClientesBtn"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="@string/LabelMenuBtn"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/InventarioBtn"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:text="@string/LabelHistorialOrdenesBtn"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/VentasBtn"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:text="@string/LabelRegistrarVisitaBtn"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

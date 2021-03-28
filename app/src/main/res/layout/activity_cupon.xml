@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cupon">
+
+    <ImageView
+        android:id="@+id/FondoCupon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoCupon"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_cupon" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/GraciasxCalificar"
+            android:layout_width="272dp"
+            android:layout_height="143dp"
+            android:gravity="center_horizontal"
+            android:text="@string/LabelGratitud"
+            android:textColor="@color/negroRusti"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:contentDescription="@string/altFondoPizza01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pizza_cup_n" />
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:contentDescription="@string/altFondoLogoScreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+        <TextView
+            android:id="@+id/CodigoRk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:rotation="23"
+            android:text="@string/LabelCuponField"
+            android:textColor="@color/blancorusti"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/GanasteCupon"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/CodRusti"
+            android:layout_width="137dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="10dp"
+            android:rotation="25"
+            android:text="@string/LabelCupon2Field"
+            android:textColor="@color/blancorusti"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/CirculoCupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/altFondoCupon2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/Logo"
+            app:srcCompat="@drawable/bot_n_2_cup_n" />
+
+        <ImageView
+            android:id="@+id/CuadroCupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:contentDescription="@string/altFondoCupon1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo"
+            app:srcCompat="@drawable/bot_n_1_cup_n" />
+
+        <TextView
+            android:id="@+id/LabelEnTodo"
+            android:layout_width="152dp"
+            android:layout_height="76dp"
+            android:rotation="-5"
+            android:rotationY="15"
+            android:text="@string/LabelEnTodoElMenu"
+            android:textColor="@color/negroRusti"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CuadroCupon"
+            app:layout_constraintEnd_toEndOf="@+id/CuadroCupon"
+            app:layout_constraintHorizontal_bias="0.737"
+            app:layout_constraintStart_toStartOf="@+id/CuadroCupon"
+            app:layout_constraintTop_toTopOf="@+id/CuadroCupon"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/GanasteCupon"
+            android:layout_width="162dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/LabelGanaste"
+            android:textColor="@color/blancorusti"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/CodRusti"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.969"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CuadroCupon"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/PorcentajeDescuento"
+            android:layout_width="77dp"
+            android:layout_height="51dp"
+            android:text="@string/LabelPorcentaje"
+            android:textColor="@color/negroRusti"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/CuadroCupon"
+            app:layout_constraintEnd_toEndOf="@+id/CirculoCupon"
+            app:layout_constraintHorizontal_bias="0.295"
+            app:layout_constraintStart_toStartOf="@+id/CirculoCupon"
+            app:layout_constraintTop_toTopOf="@+id/CirculoCupon"
+            app:layout_constraintVertical_bias="0.737" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/ClientesBtn"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="25dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:text="@string/LabelVolverMenuBtn"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

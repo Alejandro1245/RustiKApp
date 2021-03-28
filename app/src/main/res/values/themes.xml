@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Rustik" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/mostazaRusti</item>
+        <item name="colorPrimaryDark">@color/negroRusti</item>
+        <item name="colorAccent">@color/blancorusti</item>
+        <item name="color">@color/verdeBotones</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Rustik.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Rustik.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Rustik.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

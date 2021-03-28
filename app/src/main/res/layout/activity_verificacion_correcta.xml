@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificacionCorrecta">
+
+    <ImageView
+        android:id="@+id/FondoVerificacionC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoVerificiacion"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/identificaci_n_correcta_rd__1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/LogoVerificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/altLogo01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ImgHuella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/altHuellaPic"
+            app:srcCompat="@drawable/fingerprint" />
+
+        <ImageView
+            android:id="@+id/imgCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-170dp"
+            android:contentDescription="@string/altCheck"
+            app:srcCompat="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/IntroRegistro"
+            android:layout_width="283dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/altFondoLoginScreen"
+            android:includeFontPadding="false"
+            android:text="@string/LabelBienvenido"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ClientesBtn"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/verdeBotones"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:padding="0dp"
+            android:text="@string/LabelContinuarBtn"
+            android:textAlignment="center"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

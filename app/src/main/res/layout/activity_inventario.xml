@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:scrollbarSize="4sp"
+    tools:context=".Inventario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Superior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/FondoInventario"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/altFondoInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/inven1" />
+
+            <ImageView
+                android:id="@+id/Logo03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/altLogo01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+            <TextView
+                android:id="@+id/LabelClientesAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:text="@string/LabelInventario"
+                android:textColor="@color/blancorusti"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.833"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Logo03" />
+
+            <TextView
+                android:id="@+id/BuscarInvenGra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="240dp"
+                android:text="@string/LabelBuscarInsumo"
+                android:textColor="@color/blancorusti"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin" />
+
+            <EditText
+                android:id="@+id/LabelBuscarInsumoField"
+                android:layout_width="280dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/searchfield"
+                android:ems="10"
+                android:hint="@string/LabelIngreseInsumoField"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textColorHint="@color/EditTextColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BuscarInvenGra" />
+
+            <ImageButton
+                android:id="@+id/BuscarInventarioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelBuscarBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.179"
+                app:layout_constraintStart_toEndOf="@+id/LabelBuscarInsumoField"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin"
+                app:srcCompat="@drawable/ic_icon_awesome_search" />
+
+            <ImageButton
+                android:id="@+id/GraficaVentasBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelGraficasBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.791"
+                app:layout_constraintStart_toEndOf="@+id/BuscarInventarioBtn"
+                app:layout_constraintTop_toBottomOf="@+id/LabelClientesAdmin"
+                app:srcCompat="@drawable/ic_gr_ficas" />
+
+            <ImageButton
+                android:id="@+id/FiltrosClienteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelFiltrosInventario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LabelBuscarInsumoField"
+                app:srcCompat="@drawable/ic_icon_metro_filter" />
+
+            <TextView
+                android:id="@+id/TextFiltros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/LabelFiltrosInventario"
+                android:textColor="@color/blancorusti"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.048"
+                app:layout_constraintStart_toEndOf="@+id/FiltrosClienteBtn"
+                app:layout_constraintTop_toBottomOf="@+id/LabelBuscarInsumoField" />
+
+            <ImageButton
+                android:id="@+id/QuitarFiltroBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelQuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextFiltros"
+                app:srcCompat="@drawable/ic_light____chips_1__input_b__text_only" />
+
+            <TextView
+                android:id="@+id/TextQuitarFiltro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="27dp"
+                android:text="@string/LabelQuitarFiltro"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintBottom_toBottomOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintStart_toStartOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintTop_toTopOf="@+id/QuitarFiltroBtn" />
+
+            <ImageButton
+                android:id="@+id/quitarFiltroBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/LabelQuitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/QuitarFiltroBtn"
+                app:layout_constraintTop_toBottomOf="@+id/TextFiltros"
+                app:srcCompat="@drawable/ic_light____chips_1__input_b__text_only" />
+
+            <TextView
+                android:id="@+id/textQuitarFiltro2"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginEnd="27dp"
+                android:contentDescription="@string/LabelQuitarFiltro2"
+                android:text="@string/LabelQuitarFiltro2"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintBottom_toBottomOf="@+id/quitarFiltroBtn"
+                app:layout_constraintEnd_toEndOf="@+id/quitarFiltroBtn"
+                app:layout_constraintStart_toStartOf="@+id/quitarFiltroBtn"
+                app:layout_constraintTop_toTopOf="@+id/quitarFiltroBtn" />
+
+            <ImageView
+                android:id="@+id/FondoDatosInven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/altFondoDatosInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/QuitarFiltroBtn"
+                app:srcCompat="@drawable/ic_trazado_66" />
+
+            <TextView
+                android:id="@+id/TextPepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:forceHasOverlappingRendering="false"
+                android:text="@string/LabelNombreProducto"
+                android:textColor="@color/negroRusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textcodigoPro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.068"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven"
+                app:layout_constraintVertical_bias="0.65" />
+
+            <TextView
+                android:id="@+id/textcodigoPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCodigoProducto"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textUnidadesPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/LabelUnidadesProducto"
+                android:textColor="@color/negroRusti"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven"
+                app:layout_constraintEnd_toEndOf="@+id/FondoInventario"
+                app:layout_constraintHorizontal_bias="0.897"
+                app:layout_constraintStart_toEndOf="@+id/TextPepperoni"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven"
+                app:layout_constraintVertical_bias="0.281" />
+
+            <TextView
+                android:id="@+id/textCostos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCostosProducto"
+                android:textColor="@color/blancorusti"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.716"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textCostoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="@string/LabelCostosTotalProducto"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.272"
+                app:layout_constraintStart_toEndOf="@+id/textCostos"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/FondoDatosInven01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/altFondoDatosInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven"
+                app:srcCompat="@drawable/ic_trazado_66" />
+
+            <TextView
+                android:id="@+id/textQuesoChed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/LabelNombreProducto2"
+                android:textColor="@color/negroRusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textCodigoPro2"
+                app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven01"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="@+id/FondoDatosInven01"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven01"
+                app:layout_constraintVertical_bias="0.638" />
+
+            <TextView
+                android:id="@+id/textCodigoPro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCodigoProducto2"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven01"
+                app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven01"
+                app:layout_constraintHorizontal_bias="0.066"
+                app:layout_constraintStart_toStartOf="@+id/FondoDatosInven01" />
+
+            <TextView
+                android:id="@+id/textUnidadesPro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/LabelUnidadesProducto2"
+                android:textColor="@color/negroRusti"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven01"
+                app:layout_constraintHorizontal_bias="0.878"
+                app:layout_constraintStart_toEndOf="@+id/textQuesoChed"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven01" />
+
+            <TextView
+                android:id="@+id/textCostos2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCostosProducto2"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven01"
+                app:layout_constraintEnd_toStartOf="@+id/textCostoTotal2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textCodigoPro2"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro2"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <TextView
+                android:id="@+id/textCostoTotal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCostosTotalProducto2"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro2"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <ImageView
+                android:id="@+id/FondoDatosInven02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/altFondoDatosInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven01"
+                app:srcCompat="@drawable/ic_trazado_66" />
+
+            <TextView
+                android:id="@+id/texHarinaTrigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/LabelNombreProducto3"
+                android:textColor="@color/negroRusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textCodigoPro3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven02"
+                app:layout_constraintVertical_bias="0.315" />
+
+            <TextView
+                android:id="@+id/textCodigoPro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/LabelCodigoProducto3"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven02"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textUnidadesPro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/LabelUnidadesProducto3"
+                android:textColor="@color/negroRusti"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven02"
+                app:layout_constraintHorizontal_bias="0.857"
+                app:layout_constraintStart_toEndOf="@+id/texHarinaTrigo"
+                app:layout_constraintTop_toTopOf="@+id/FondoDatosInven02" />
+
+            <TextView
+                android:id="@+id/textCostos3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCostosProducto2"
+                android:textColor="@color/blancorusti"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven02"
+                app:layout_constraintStart_toEndOf="@+id/textCodigoPro3"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro3"
+                app:layout_constraintVertical_bias="0.375" />
+
+            <TextView
+                android:id="@+id/textCostoTotal3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/LabelCostosTotalProducto3"
+                android:textColor="@color/blancorusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/FondoDatosInven02"
+                app:layout_constraintEnd_toEndOf="@+id/FondoDatosInven02"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toEndOf="@+id/textCostos3"
+                app:layout_constraintTop_toBottomOf="@+id/textUnidadesPro3"
+                app:layout_constraintVertical_bias="0.375" />
+
+            <ImageView
+                android:id="@+id/FondoDatosInven03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/altFondoDatosInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven02"
+                app:srcCompat="@drawable/ic_trazado_66" />
+
+            <ImageView
+                android:id="@+id/FondoDatosInven04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/altFondoDatosInventario"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FondoDatosInven03"
+                app:srcCompat="@drawable/ic_trazado_66" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

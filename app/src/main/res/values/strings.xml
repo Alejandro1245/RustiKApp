@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">Rustik</string>
+    <string name="altFondoLoginScreen">Fondo principal</string>
+    <string name="altFondoLogoScreen">Logo</string>
+    <string name="LabelAdminBtn">ADMINISTRADOR</string>
+    <string name="LabelClientBtn">CLIENTE</string>
+    <string name="LabelPersonalBtn">PERSONAL</string>
+    <string name="LabelUserFiel">Seleccione su usuario</string>
+
+    // Strings inciar Sesión
+    <string name="altFondoIniciarSesion">Fondo de insumos</string>
+    <string name="LabelIngresarBtn">INGRESAR</string>
+    <string name="LabelRecuperarContraseñaBtn">Recuperar contraseña</string>
+    <string name="LabelRegistrarseBtn">REGISTRARSE</string>
+    <string name="LabelInicieSesion">INICIAR SESIÓN </string>
+    <string name="LabelNITField">NIT :</string>
+    <string name="LabelClaveField">CLAVE :</string>
+    <string name="LabelINit">Ingrese su NIT</string>
+    <string name="LabelClave"> </string>
+    <string name="altFiguraElipse">Elipse</string>
+
+    //String Menu Clientes
+    <string name="altFondoMenuClientes">Menu Clientes</string>
+    <string name="altLogo01">Logo01</string>
+    <string name="LabelMenuField">Escoja una opción</string>
+    <string name="LabelMenuClientes">MENÚ CLIENTES </string>
+    <string name="LabelMenuBtn">MENÚ</string>
+    <string name="LabelHistorialOrdenesBtn">HISTORIAL ORDENES</string>
+    <string name="LabelRegistrarVisitaBtn">REGISTRAR VISITA</string>
+    <string name="LabelCombo1">Combo 1 </string>
+    <string name="LabelCombo2">Combo 2 </string>
+    <string name="LabelCombo3">Combo 3 </string>
+
+    // String Registrar Visita
+    <string name="altFondoRegistroVisita">Fondo Registrar Visita</string>
+    <string name="altLogo02">Logo02</string>
+    <string name="altLogoTriste">Logo Triste</string>
+    <string name="altLogoFeliz">Logo Feliz</string>
+    <string name="altLogoNeutral">Logo Neutral</string>
+    <string name="LabelCalificaExperiencia">Logo experiencia</string>
+    <string name="altLogoCodigoQR">CodigoQR</string>
+    <string name="LabelScanField">ESCANÉAME</string>
+    <string name="altLogoCel">LogoCel</string>
+    <string name="altLogoPizza">LogoPizza</string>
+    <string name="altLogoCamara">LogoCamara</string>
+    <string name="LabelRegistrarVisita">Activa la camara de tu celular y enfoca! </string>
+    <string name="AltCalificarExp">Califica nuestro servicio </string>
+    <string name="altFiguraCirculo">Figura Circulo</string>
+    <string name="LabelCalificaTuExp">Califica tu experiencia </string>
+
+    // Strings cupon
+    <string name="altFondoCupon">Fondo Cupón</string>
+    <string name="altFondoCupon1">Fondo Cupón1</string>
+    <string name="altFondoCupon2">Fondo Cupón2</string>
+    <string name="altFondoPizza01">Fondo Pizza</string>
+    <string name="LabelCuponField">Código: </string>
+    <string name="LabelCupon2Field">RustiK-17631</string>
+    <string name="LabelRestricciones">Valido hasta el 30 de marzo de 2021. No son acumulables</string>
+    <string name="LabelGratitud">GRACIAS POR CALIFICAR TU EXPERIENCIA</string>
+    <string name="LabelVolverMenuBtn">VOLVER AL MENÚ</string>
+    <string name="LabelEnTodoElMenu">En todo el menú </string>
+    <string name="LabelPorcentaje">15% </string>
+    <string name="LabelGanaste">GANASTE UN CÚPON </string>
+    <string name="title_activity_registrarse">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="large_text"></string>
+
+    // Recuperar contraseña
+    <string name="altFondoRecuperarC">Fondo Recuperar clave</string>
+    <string name="LabelRecuperarClave">Desea recuperar su clave por correo electrónico o por mensaje de texto</string>
+    <string name="TitleRecuperarClave">RECUPERAR CONTRASEÑA</string>
+    <string name="RadioButton1">SMS</string>
+    <string name="RadioButton2">CORREO ELECTRÓNICO</string>
+    <string name="recuperarclaveBtn">RECUPERAR CLAVE</string>
+
+    //Strings Registrese
+    <string name="altFondoRegistrese">Fondo Registrese</string>
+    <string name="altImgPizza">Img Pizza</string>
+    <string name="altImgShape">Img rectangulo</string>
+    <string name="LabelRegistreInvitiacion">Registre sus datos para acceder a nuestros servicios virtuales
+        como también a beneficios y promociones exclusivas </string>
+    <string name="LabelNombres">Nombres: </string>
+    <string name="LabelNombreField">Ingrese su nombre </string>
+    <string name="LabelApellidos">Apellidos: </string>
+    <string name="LabelApellidosField">Ingrese sus apellidos </string>
+    <string name="LabelDireccion">Dirección: </string>
+    <string name="LabelDireccionField">Ingrese su lugar de residencia </string>
+    <string name="LabelNit">Nit: </string>
+    <string name="LabelNitField">Ingrese NIT </string>
+    <string name="LabelTelefono">Teléfono: </string>
+    <string name="LabelTelefonoField">Ingrese su número de contacto principal </string>
+    <string name="LabelCorreoElectronico">Correo eléctronico: </string>
+    <string name="LabelCorreoEField">Ingrese su correo eléctronico</string>
+    <string name="LabelIndiciacionesPass">A continuación debe crear una contraseña para su usuario, mínimo 8 caracteres,
+    debe contener al menos un símbolo especial y una mayúscula</string>
+    <string name="LabelContraseña">Contraseña: </string>
+    <string name="LabelContraseña2">Repita su contraseña: </string>
+    <string name="SwitchRecibirOfertas">¿Desea recibir promociones y ofertas? </string>
+    <string name="LabelTipoNotificacion">Tipo de notificación </string>
+    <string name="CheckBoxTipoNotificacion1">SMS </string>
+    <string name="CheckBoxTipoNotificacion2">CORREO ELÉCTRONICO </string>
+    <string name="LabelEnviarBtn">ENVIAR</string>
+    <string name="LabelRegistrese">REGÍSTRESE</string>
+
+    // CALIFICAR EXPERIENCIA
+    <string name="altFondoCalificar">Fondo Calificar</string>
+    <string name="TitleCalificar">CALIFICA TU EXPERIENCIA</string>
+    <string name="LabelCalificarBtn">CALIFICAR</string>
+    <string name="LabelSeleccioneMesero">Seleccione el mesero que lo atendio</string>
+    <string name="LabelCalifiqueMesero">Califique su servicio de 0 a 100, siendo 0 la más
+        baja y 100 la más alta</string>
+    <string name="LabelCalificarComida">Califique la comida que ordeno contemplando su
+        sabor, temperatura y presentación de 0 a 100, siendo 0 la más baja y 100 la más alta</string>
+    <string name="LabelCalificarLugar">Califique el aseo y orden del restaurante de 0 a
+        100, siendo 0 la más baja y 100 la más alta</string>
+    <string name="LabelSugerencias">A continuación encontrara un espacio para sugerencias y comentarios</string>
+    <string name="CuadroSugerencias">Cuadro sugerencias</string>
+    <string name="HintComentarioYSu"> </string>
+    <string name="LabelComentarioY">Comentarios y/o sugerencias </string>
+    <string name="ImgCorazonRoto">CorazonRoto</string>
+    <string name="ImgCorazon">Corazon</string>
+
+
+    // ALEJO PANTALLAS
+    // Ingreso Admin
+    <string name="altFondoAdmin">Fondo Admin</string>
+    <string name="altHuellaPic">Fondo Huella</string>
+    <string name="altFacialPic">Fondo Facial</string>
+    <string name="LabelSeleccionUsuario">Seleccione la forma en que desea identificarse </string>
+    <string name="LabelReconocimientoDactilarBtn">RECONOCIMIENTO DACTILAR</string>
+    <string name="LabelReconocimientoFacialBtn">RECONOCIMIENTO FACIAL</string>
+
+    //Verificación Correcta
+    <string name="altFondoVerificiacion">Fondo Verificación</string>
+    <string name="altCheck">Fondo check</string>
+    <string name="LabelBienvenido">BIENVENIDO</string>
+    <string name="LabelContinuarBtn">CONTINUAR</string>
+
+    //Verificación Incorrecta
+    <string name="altFondoVerificiacionI">Fondo Verificación</string>
+    <string name="LabelIntenteDeNuevo">INTENTE DE NUEVO</string>
+    <string name="LabelRegresarBtn">REGRESAR</string>
+    <string name="altXcheck">Imagen Error</string>
+
+    // Menú Admin
+    <string name="altFondoMenuAdmin">Fondo Menú Admin</string>
+    <string name="altimgAdminDatos">Imagen Datos</string>
+    <string name="LabelInventarioBtn">INVENTARIO</string>
+    <string name="LabelClientesBtn">CLIENTES</string>
+    <string name="LabelVentasBtn">VENTAS</string>
+    <string name="LabelSeleccionAdmin">Seleccione la opción que desea gestionar </string>
+    <string name="LabelGestionRustiK">GESTIÓN RUSTIK</string>
+    <string name="LabelSalirBtn"> </string>
+
+    // Inventario
+    <string name="altFondoInventario">Fondo Inventario</string>
+    <string name="LabelInventario">INVENTARIO</string>
+    <string name="LabelBuscarInsumo">Buscar insumo:</string>
+    <string name="LabelIngreseInsumoField">Ingrese nombre o código del producto</string>
+    <string name="LabelBuscarBtn"> Buscar </string>
+    <string name="LabelGraficasBtn"> Gráficas </string>
+    <string name="LabelFiltrosInventario">Filtros</string>
+    <string name="LabelQuitarFiltroBtn"> Quitar Filtro </string>
+    <string name="LabelQuitarFiltro">Menos Unidades</string>
+    <string name="LabelQuitarFiltro2">Filtro2</string>
+    <string name="altFondoDatosInventario">Fondo Datos Inventario</string>
+    //Producto 1
+    <string name="LabelNombreProducto">Pepperoni</string>
+    <string name="LabelCodigoProducto">PP01</string>
+    <string name="LabelUnidadesProducto">15 Unidades</string>
+    <string name="LabelCostosProducto">$25.000 c/U | </string>
+    <string name="LabelCostosTotalProducto">$375.000 </string>
+    //Producto 2
+    <string name="LabelNombreProducto2">Queso Cheddar</string>
+    <string name="LabelCodigoProducto2">QCH01</string>
+    <string name="LabelUnidadesProducto2">40 Unidades</string>
+    <string name="LabelCostosProducto2">$13.000 c/U | </string>
+    <string name="LabelCostosTotalProducto2">$520.000 </string>
+    //Producto 3
+    <string name="LabelNombreProducto3">Harina de trigo</string>
+    <string name="LabelCodigoProducto3">HT01</string>
+    <string name="LabelUnidadesProducto3">100 Unidades</string>
+    <string name="LabelCostosProducto3">$8.000 c/U | </string>
+    <string name="LabelCostosTotalProducto3">$800.000 </string>
+
+    // CLIENTES Admin
+    <string name="altFondoClientesAdmin">Fondo Clientes Admin</string>
+    <string name="LabelClientes">CLIENTES</string>
+    <string name="LabelBuscarCliente">Buscar cliente:</string>
+    <string name="LabelIngreseNitoNombreField">Ingrese NIT</string>
+    <string name="LabelBuscarCBtn"> Buscar </string>
+    <string name="LabelGraficasCBtn"> Gráficas </string>
+    <string name="LabelFiltrosCInventario">Filtros</string>
+    <string name="LabelQuitarFiltroCBtn"> Quitar Filtro </string>
+    <string name="LabelQuitarFiltroC">Calificaciones</string>
+    <string name="LabelQuitarFiltroC2">Enabled 1</string>
+    //Usuario 1
+    <string name="LabelCliente1">USUARIO 1</string>
+    <string name="LabelDescripCliente">Dirección, historial de ordenes, correo, teléfono</string>
+    <string name="LabelOpcionesClientBtn"> Opciones Cliente </string>
+    <string name="altFotoCliente">Foto Cliente</string>
+    // Usuario 2
+    <string name="LabelCliente2">USUARIO 2</string>
+    <string name="LabelDescripCliente2">Dirección, historial de ordenes, correo, teléfono</string>
+    <string name="LabelCliente3">USUARIO 3</string>
+
+
+    // VENTAS Admin
+    <string name="altLineaVentas">Linea Ventas</string>
+    <string name="LabelVentas">VENTAS</string>
+    <string name="LabelFiltrosVentas">Filtros ventas</string>
+    <string name="LabelFiltrosVentasFecha1">Desde:</string>
+    <string name="LabelFiltrosVentasFecha2">Hasta:</string>
+    <string name="LabelVentasBuscar">Buscar producto: </string>
+    <string name="LabelOpcionesVentasBtn"> Opciones Ventas </string>
+    <string name="LabelMasOpcionesBtn"> Más Opciones</string>
+    <string name="LabelCompartirBtn"> Compartir</string>
+    <string name="altIconVentas">Icon Ventas</string>
+    //Venta 1
+    <string name="LabelVenta1">Venta 1</string>
+    <string name="LabelDescripVenta1">Productos, adiciones, método de pago</string>
+    <string name="LabelCostoVenta1">+$80.000</string>
+    //Venta 2
+    <string name="LabelVenta2">Venta 2</string>
+    <string name="LabelCostoVenta2">+$120.000</string>
+    //Venta 3
+    <string name="LabelVenta3">Venta 3</string>
+    <string name="LabelCostoVenta3">+$76.400</string>
+
+    // Inventario Graficas
+    <string name="altFondoGraficasInven">Fondo Gráficas Inventario</string>
+    <string name="LabelBuscarInsumo01">Buscar insumo: </string>
+    <string name="altFondoEstadisticas">Fondo estadisticas inventario</string>
+    <string name="LabelPepperoniEs">Pepperoni </string>
+    <string name="LabelPepperoniCod">PP01 </string>
+    <string name="LabelEstadoPro">Estado | </string>
+    <string name="LabelEstadoPro2">Stock bajo </string>
+    <string name="LabelEstadoMes">Mes | </string>
+    <string name="LabelEstadoMes2">Marzo </string>
+
+    // Clientes Graficas
+    <string name="altFondoClientesG">Fondo Gráficas Clientes</string>
+    <string name="textMes1">Febrero</string>
+    <string name="textMes2">Marzo</string>
+    <string name="textMes3">Abril</string>
+    <string name="textValoracion">80</string>
+    <string name="textBalance">Balance</string>
+    <string name="altFondoPizzita1">Pizzita1</string>
+    <string name="altBarraColores">Barra colores</string>
+    <string name="altCirculoColor">Elipse Color</string>
+    <string name="textBalanceAlto">Calificaciones de 75 a 100</string>
+    <string name="textPorcentajeAlto">40%</string>
+    // Calificaciones 2
+    <string name="textBalanceMedio">Calificaciones de 51 a 74</string>
+    <string name="textPorcentajeMedio">35%</string>
+    // Calificaciones 3
+    <string name="textBalanceMedioBajo">Calificaciones de 26 a 50</string>
+    <string name="textPorcentajeMedioBajo">20%</string>
+    // Calificaciones 4
+    <string name="textBalanceBajo">Calificaciones de 0 a 25</string>
+    <string name="textPorcentajeBajo">5%</string>
+    <string name="textOpcionesBtn">Mas Opciones</string>
+    <string name="textCompartirOpBtn">Compartir</string>
+    <string name="textOpcionesLineas">Opciones</string>
+
+    // Gráficas Ventas
+    <string name="altFondoVentasG">Fondo Gráficas Ventas</string>
+    <string name="textBalanceTotal">Balance total</string>
+    <string name="textBalanceDinero">$2.000.000,87</string>
+    <string name="Labelmeses">Ene  Feb  Mar  Abr  May  Jun  Jul  Ago</string>
+
+</resources>

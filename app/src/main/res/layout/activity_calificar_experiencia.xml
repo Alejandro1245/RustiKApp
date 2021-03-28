@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalificarExperiencia">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blancorusti"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/Superior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/altFondoCalificar"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/calificar_experiencia__1" />
+
+            <TextView
+                android:id="@+id/CalificarExperienciaTitle"
+                android:layout_width="267dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/TitleCalificar"
+                android:textColor="@color/blancorusti"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SeleccioneMesero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="88dp"
+                android:text="@string/LabelSeleccioneMesero"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarExperienciaTitle" />
+
+            <TextView
+                android:id="@+id/textcalificacionM"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="176dp"
+                android:text="@string/LabelCalifiqueMesero"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SeleccioneMesero" />
+
+            <ImageButton
+                android:id="@+id/HeartImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="64dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazon"
+                app:layout_constraintBottom_toTopOf="@+id/CalificarComida"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textcalificacionM"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_icon_awesome_heart_broken" />
+
+            <ImageButton
+                android:id="@+id/Hearth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazonRoto"
+                app:layout_constraintBottom_toTopOf="@+id/CalificarComida"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textcalificacionM"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_icon_awesome_heart" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="2dp"
+                android:max="100"
+                android:progressBackgroundTint="#6A6666"
+                android:progressTint="@color/verdeBotones"
+                app:layout_constraintEnd_toStartOf="@+id/Hearth2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/HeartImg"
+                app:layout_constraintTop_toBottomOf="@+id/textcalificacionM" />
+
+            <TextView
+                android:id="@+id/CalificarComida"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/LabelCalificarComida"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="2dp"
+                android:max="100"
+                android:progressBackgroundTint="#6A6666"
+                android:progressTint="@color/verdeBotones"
+                app:layout_constraintEnd_toStartOf="@+id/hearth"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/heartImg"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarComida" />
+
+            <ImageButton
+                android:id="@+id/heartImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="64dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazon"
+                app:layout_constraintBottom_toTopOf="@+id/CalificarServicio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarComida"
+                app:layout_constraintVertical_bias="0.097"
+                app:srcCompat="@drawable/ic_icon_awesome_heart_broken" />
+
+            <ImageButton
+                android:id="@+id/hearth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazonRoto"
+                app:layout_constraintBottom_toTopOf="@+id/CalificarServicio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarComida"
+                app:layout_constraintVertical_bias="0.097"
+                app:srcCompat="@drawable/ic_icon_awesome_heart" />
+
+            <TextView
+                android:id="@+id/CalificarServicio"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="36dp"
+                android:text="@string/LabelCalificarLugar"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="2dp"
+                android:max="100"
+                android:progressBackgroundTint="#6A6666"
+                android:progressTint="@color/verdeBotones"
+                app:layout_constraintEnd_toStartOf="@+id/hearth2"
+                app:layout_constraintStart_toEndOf="@+id/heartImg2"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarServicio" />
+
+            <ImageButton
+                android:id="@+id/heartImg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="64dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazon"
+                app:layout_constraintBottom_toTopOf="@+id/SugerenciasText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarServicio"
+                app:layout_constraintVertical_bias="0.047"
+                app:srcCompat="@drawable/ic_icon_awesome_heart_broken" />
+
+            <ImageButton
+                android:id="@+id/hearth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="72dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ImgCorazonRoto"
+                app:layout_constraintBottom_toTopOf="@+id/SugerenciasText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CalificarServicio"
+                app:layout_constraintVertical_bias="0.047"
+                app:srcCompat="@drawable/ic_icon_awesome_heart" />
+
+            <TextView
+                android:id="@+id/SugerenciasText"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="100dp"
+                android:text="@string/LabelSugerencias"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
+
+            <TextView
+                android:id="@+id/ComentsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/LabelComentarioY"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.198"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SugerenciasText" />
+
+            <ImageView
+                android:id="@+id/ShapeComentarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/CuadroSugerencias"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ComentsText"
+                app:srcCompat="@drawable/ic_trazado_83" />
+
+            <EditText
+                android:id="@+id/ComentariosBox"
+                android:layout_width="275dp"
+                android:layout_height="146dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/negroRusti"
+                app:layout_constraintBottom_toBottomOf="@+id/ShapeComentarios"
+                app:layout_constraintEnd_toEndOf="@+id/ShapeComentarios"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="@+id/ShapeComentarios"
+                app:layout_constraintTop_toTopOf="@+id/ShapeComentarios" />
+
+            <Button
+                android:id="@+id/EnviarCalifiBtn"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="80dp"
+                android:background="@color/verdeBotones"
+                android:elevation="20dp"
+                android:text="@string/LabelCalificarBtn"
+                android:textColor="@color/negroRusti"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ComentariosBox"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

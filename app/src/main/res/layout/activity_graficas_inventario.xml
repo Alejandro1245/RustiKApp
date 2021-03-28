@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GraficasInventario">
+
+    <ImageView
+        android:id="@+id/FondoGraficasInven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoGraficasInven"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/Superior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inven2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/Logo03"
+            android:layout_width="311dp"
+            android:layout_height="167dp"
+            android:contentDescription="@string/altLogo01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+        <EditText
+            android:id="@+id/LabelBuscarInsumoField"
+            android:layout_width="315dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/searchfield"
+            android:ems="10"
+            android:hint="@string/LabelIngreseInsumoField"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/negroRusti"
+            android:textColorHint="@color/EditTextColor"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/BuscarInvenGra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="240dp"
+            android:text="@string/LabelBuscarInsumo01"
+            android:textColor="@color/blancorusti"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/LabelBuscarInsumoField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo03"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/BuscarInventarioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/LabelBuscarBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/LabelBuscarInsumoField"
+            app:layout_constraintTop_toBottomOf="@+id/BuscarInvenGra"
+            app:srcCompat="@drawable/ic_icon_awesome_search" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/altFondoEstadisticas"
+            app:layout_constraintBottom_toTopOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/graficasinven" />
+
+        <ImageView
+            android:id="@+id/fondoDatosInven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:contentDescription="@string/altFondoDatosInventario"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_trazado_66" />
+
+        <ImageButton
+            android:id="@+id/opcionesVentasBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="44dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/LabelOpcionesVentasBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintVertical_bias="0.989"
+            app:srcCompat="@drawable/ic_opciones" />
+
+        <ImageButton
+            android:id="@+id/compartirBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/LabelCompartirBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_icon_awesome_share_alt" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/LabelMasOpcionesBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/compartirBtn"
+            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintStart_toEndOf="@+id/opcionesVentasBtn"
+            app:srcCompat="@drawable/ic_grupo_108" />
+
+        <TextView
+            android:id="@+id/TextNombrepro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="144dp"
+            android:text="@string/LabelPepperoniEs"
+            android:textColor="@color/negroRusti"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textEstadoPro"
+            app:layout_constraintTop_toTopOf="@+id/fondoDatosInven" />
+
+        <TextView
+            android:id="@+id/textCodigoPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/LabelPepperoniCod"
+            android:textColor="@color/blancorusti"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toStartOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textEstadoPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LabelEstadoPro"
+            android:textColor="@color/blancorusti"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toStartOf="@+id/textStock"
+            app:layout_constraintTop_toTopOf="@+id/fondoDatosInven"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <TextView
+            android:id="@+id/textStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/LabelEstadoPro2"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fondoDatosInven"
+            app:layout_constraintVertical_bias="0.225" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text="@string/LabelEstadoMes2"
+            android:textColor="@color/blancorusti"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textStock"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LabelEstadoMes"
+            android:textColor="@color/blancorusti"
+            app:layout_constraintBottom_toBottomOf="@+id/fondoDatosInven"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textEstadoPro"
+            app:layout_constraintVertical_bias="0.444" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

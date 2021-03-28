@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blancorusti"
+    android:contextClickable="true"
+    tools:context=".IniciarSesion">
+
+    <ImageView
+        android:id="@+id/FondoIniciarSesion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoIniciarSesion"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cliente_2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="155dp"
+            android:layout_height="93dp"
+            android:layout_marginBottom="32dp"
+            android:lines="2"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollHorizontally="true"
+            android:text="@string/LabelInicieSesion"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/negroRusti"
+            android:textIsSelectable="false"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo01"
+            app:layout_constraintVertical_bias="0.611" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/altLogoPizza"
+            android:rotation="-199"
+            android:rotationX="-19"
+            android:rotationY="23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pizza_2" />
+
+        <ImageView
+            android:id="@+id/logo01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@string/altLogo01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/InicioS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:minWidth="64dp"
+                android:text="@string/LabelNITField"
+                android:textAlignment="textEnd"
+                android:textColor="@color/mostazaRusti"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/LabelNitNumber"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/formfield"
+                android:ems="10"
+                android:hint="@string/LabelINit"
+                android:inputType="number"
+                android:singleLine="false"
+                android:textColor="@color/negroRusti"
+                android:textColorHint="#A5A0A0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Clave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:minWidth="64dp"
+                android:text="@string/LabelClaveField"
+                android:textAlignment="textEnd"
+                android:textColor="@color/mostazaRusti"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/UsuarioClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="@drawable/formfield"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:text="@string/LabelClave"
+                android:textColor="@color/negroRusti" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/RecuperarPwBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/verdeBotones"
+            android:elevation="20dp"
+            android:text="@string/LabelIngresarBtn"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/RecuperarClave"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="2dp"
+            android:background="@android:color/transparent"
+            android:text="@string/LabelRecuperarContraseñaBtn"
+            android:textAllCaps="false"
+            android:textColor="@color/negroRusti" />
+
+        <Button
+            android:id="@+id/RegistrarseBtn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="143dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/transparent"
+            android:text="@string/LabelRegistrarseBtn"
+            android:textAllCaps="true"
+            android:textColor="@color/negroRusti"
+            android:textStyle="bold" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

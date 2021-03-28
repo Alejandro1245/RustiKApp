@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mostazaRusti"
+    android:contentDescription="@string/altLogoCodigoQR"
+    tools:context=".NuevaExperiencia">
+
+    <ImageView
+        android:id="@+id/FondoNuevaExpo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/altFondoRegistroVisita"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondoqrr" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/Logo02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/altLogo02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pizzeria_sin_fondo" />
+
+        <ImageButton
+            android:id="@+id/CodigoQRBtn"
+            android:layout_width="257dp"
+            android:layout_height="250dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/altLogoCodigoQR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Logo02"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/codigoqr" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/Inferior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="144dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/Cupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/LogoCel"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="-25dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/altLogoCel"
+                app:srcCompat="@drawable/cuadroscan" />
+
+            <TextView
+                android:id="@+id/IntroRegistro"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/LabelScanField"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:text="@string/LabelScanField"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/blancorusti"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="@string/LabelScanField" />
+
+            <ImageView
+                android:id="@+id/LogoPizza"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-20dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/altLogoPizza"
+                app:srcCompat="@drawable/circuloima" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/AvisoActivarCam"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/LabelRegistrarVisita"
+            android:textAlignment="center"
+            android:textColor="@color/blancorusti" />
+
+        <ImageView
+            android:id="@+id/LogoCamara"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginVertical="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/altLogoCamara"
+            app:srcCompat="@drawable/iconcamara" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ShapeSemiCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/altFiguraCirculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/medio_c_rculo" />
+
+    <ImageView
+        android:id="@+id/iconSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/altLogoTriste"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconsad" />
+
+    <ImageView
+        android:id="@+id/IconNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/LabelHistorialOrdenesBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconSad"
+        app:srcCompat="@drawable/iconneutral" />
+
+    <ImageView
+        android:id="@+id/IconFeliz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/altLogoFeliz"
+        app:layout_constraintBottom_toTopOf="@+id/IconNeutral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/iconhappy" />
+
+    <ImageView
+        android:id="@+id/LabelCalificaExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/LabelCalificaTuExp"
+        android:rotation="-4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ShapeSemiCirculo"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/texto_curvo" />
+
+</android.support.constraint.ConstraintLayout>
