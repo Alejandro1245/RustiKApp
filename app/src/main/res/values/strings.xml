@@ -215,6 +215,7 @@
     <string name="LabelFiltrosVentasFecha2">Hasta:</string>
     <string name="LabelVentasBuscar">Buscar venta: </string>
     <string name="LabelOpcionesVentasBtn"> Opciones Ventas </string>
+    <string name="LabelBuscarVenta">Digite número de factura </string>
     <string name="LabelMasOpcionesBtn"> Más Opciones</string>
     <string name="LabelCompartirBtn"> Compartir</string>
     <string name="altIconVentas">Icon Ventas</string>

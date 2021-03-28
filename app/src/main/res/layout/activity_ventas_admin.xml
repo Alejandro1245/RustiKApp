@@ -130,7 +130,7 @@
                 android:layout_marginBottom="52dp"
                 android:background="@drawable/searchfield"
                 android:ems="10"
-                android:hint="@string/LabelBuscarInsumo"
+                android:hint="@string/LabelBuscarVenta"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
