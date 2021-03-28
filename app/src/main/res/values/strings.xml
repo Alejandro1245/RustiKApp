@@ -213,7 +213,7 @@
     <string name="LabelFiltrosVentas">Filtros ventas</string>
     <string name="LabelFiltrosVentasFecha1">Desde:</string>
     <string name="LabelFiltrosVentasFecha2">Hasta:</string>
-    <string name="LabelVentasBuscar">Buscar producto: </string>
+    <string name="LabelVentasBuscar">Buscar venta: </string>
     <string name="LabelOpcionesVentasBtn"> Opciones Ventas </string>
     <string name="LabelMasOpcionesBtn"> Más Opciones</string>
     <string name="LabelCompartirBtn"> Compartir</string>
