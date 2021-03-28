@@ -109,9 +109,10 @@
                 android:autofillHints=""
                 android:background="@drawable/formfield"
                 android:ems="10"
+                android:hint="@string/LabelINit"
                 android:inputType="number"
-                android:text="@string/LabelINit"
-                android:textColor="@color/negroRusti" />
+                android:textColor="@color/negroRusti"
+                android:textColorHint="@color/EditTextColor" />
 
         </LinearLayout>
 
